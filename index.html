@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de inicio de sesión</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body{
+            background-color: #009dff;
+        }
+        #loginContainer {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 400px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <br><br><br><br>
+    <div id="loginContainer">
+                <h2>Iniciar sesión</h2>
+                <hr>
+                <form action="procesar_login.php" method="post">
+                        <label for="email">Correo electrónico:</label><br>
+                        <input type="email" class="form-control" id="email" name="email" required><br>
+            
+                        <label for="password">Contraseña:</label><br>
+                        <input type="password" class="form-control" id="password" name="password" required><br>
+                    <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+                </form>
+                <div>
+                    <a href="cam.php"><b>Recuperar contraseña</b></a>
+                </div>
+                <div>
+                    <a href="reg_user.html"><b>Registrar</b></a>
+        </div>
+    </div>
+        <!-- Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="script.js"></script>
+
+</body>
+
+</html>
